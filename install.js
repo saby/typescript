@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const tsc = require('typescript/lib/tsc');
 const logger = console;
 
 function unixify (str) {
@@ -113,4 +114,10 @@ Object.keys(options).forEach((param) => {
       logger.error(`${message}: fail.`);
       logger.error(err.message);
    });
+
+
 });
+
+
+// Compile custom rules
+tsc.executeCommandLine('./tslint/custom-rules');

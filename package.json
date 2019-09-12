@@ -5,6 +5,10 @@
    "bin": {
       "saby-typescript": "./cli.js"
    },
+   "scripts": {
+      "postinstall": "npm run compile . ",
+      "compile": "tsc"
+   },
    "repository": {
       "type": "git",
       "url": "git@github.com:saby/TypeScript.git"

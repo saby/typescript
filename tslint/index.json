@@ -1,6 +1,6 @@
 {
   "extends": "tslint:recommended",
-  "rulesDirectory": "saby-typescript/customRules/",
+  "rulesDirectory": "saby-typescript/tslint/custom-rules/",
   "rules": {
         "doc-library-includes": true,
         "ban-comma-operator": true,
