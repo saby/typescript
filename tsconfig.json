@@ -1,3 +1,13 @@
 {
-   "include": ["tslint/custom-rules"]
+   "include": ["tslint/custom-rules"],
+   "compilerOptions": {
+     "alwaysStrict": false,
+     "importHelpers": false,
+     "lib": ["dom", "es5", "es2015", "scripthost"],
+     "module": "amd",
+     "moduleResolution": "classic",
+     "target": "es5",
+     "baseUrl": ".",
+     "typeRoots" : ["node_modules/@types"]
+   }	
 }

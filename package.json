@@ -6,7 +6,7 @@
       "saby-typescript": "./cli.js"
    },
    "scripts": {
-      "postinstall": "npm run compile --silent",
+      "postinstall": "npm run compile --tsconfig=tsconfig.json",
       "compile": "tsc"
    },
    "repository": {
