@@ -75,6 +75,12 @@ const options = {
       link: true,
       default: true
    },
+    globalTypings: {
+      source: 'wasabyGlobalTypings.d.ts',
+      target: 'wasabyGlobalTypings.d.ts',
+      link: true,
+      default: true
+   },
    tslint: {
       source: 'tslint/export.json',
       target: 'tslint.json',
