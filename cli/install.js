@@ -17,6 +17,10 @@ async function copyWithPostProcessing(source, target, config, data) {
    try {
       return await new Promise((resolve, reject) => {
          if (config.link) {
+            if (fs.existsSync(target)) {
+               fs.unlinkSync(target);
+            }
+
             fs.symlink(source, target, (err) => {
                if (err) {
                   reject(err);
