@@ -17,6 +17,10 @@ async function copyWithPostProcessing(source, target, config, data) {
    try {
       return await new Promise((resolve, reject) => {
          if (config.link) {
+            if (fs.existsSync(target)) {
+               fs.unlinkSync(target);
+            }
+
             fs.symlink(source, target, (err) => {
                if (err) {
                   reject(err);
@@ -72,6 +76,12 @@ const options = {
    tslib: {
       source: 'tslib.js',
       target: 'tslib.js',
+      link: true,
+      default: true
+   },
+    globalTypings: {
+      source: 'wasabyGlobalTypings.d.ts',
+      target: 'wasabyGlobalTypings.d.ts',
       link: true,
       default: true
    },
