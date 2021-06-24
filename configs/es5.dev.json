@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./application",
     "outDir": "./application",
-    "types": ["mocha", "requirejs"]
+    "types": ["mocha", "requirejs", "jest"]
   },
   "exclude": [
     "build-ui"
