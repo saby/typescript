@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`max-line-length не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`max-line-length не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`max-line-length ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 122,
+    "endLine": 1,
+    "line": 1,
+    "message": "This line has a length of 121. Maximum allowed is 120.",
+    "messageId": "max",
+    "nodeType": "Program",
+    "ruleId": "max-len",
+    "severity": 2,
+  },
+]
+`;
