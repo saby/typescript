@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-shadow ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 12,
+    "endLine": 2,
+    "line": 2,
+    "message": "'a' is already declared in the upper scope on line 6 column 7.",
+    "messageId": "noShadow",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/no-shadow",
+    "severity": 1,
+  },
+  Object {
+    "column": 11,
+    "endColumn": 12,
+    "endLine": 3,
+    "line": 3,
+    "message": "'b' is already declared in the upper scope on line 7 column 10.",
+    "messageId": "noShadow",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/no-shadow",
+    "severity": 1,
+  },
+]
+`;

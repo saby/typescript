@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`value-keyword-case не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`value-keyword-case не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`value-keyword-case ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 13,
+    "endColumn": 14,
+    "endLine": 2,
+    "line": 2,
+    "rule": "value-keyword-case",
+    "severity": "error",
+    "text": "Expected \\"Flex\\" to be \\"flex\\" (value-keyword-case)",
+  },
+]
+`;
