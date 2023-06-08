@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-empty-interface не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-empty-interface ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 14,
+    "endLine": 1,
+    "line": 1,
+    "message": "An empty interface is equivalent to \`{}\`.",
+    "messageId": "noEmpty",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/no-empty-interface",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-empty-interface ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 14,
+    "endLine": 5,
+    "fix": Object {
+      "range": Array [
+        34,
+        62,
+      ],
+      "text": "type Bar = Foo",
+    },
+    "line": 5,
+    "message": "An interface declaring no members is equivalent to its supertype.",
+    "messageId": "noEmptyWithSuper",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/no-empty-interface",
+    "severity": 2,
+  },
+]
+`;
