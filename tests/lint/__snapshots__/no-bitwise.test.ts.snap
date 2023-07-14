@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-bitwise ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 19,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected use of '|'.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-bitwise ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 19,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected use of '&'.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-bitwise ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 19,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected use of '^'.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-bitwise ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 17,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected use of '~'.",
+    "messageId": "unexpected",
+    "nodeType": "UnaryExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-bitwise ошибки индекс теста: 4 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 20,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected use of '<<'.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-bitwise ошибки индекс теста: 5 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 20,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected use of '>>'.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-bitwise ошибки индекс теста: 6 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 21,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected use of '>>>'.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-bitwise ошибки индекс теста: 7 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 10,
+    "endLine": 3,
+    "line": 3,
+    "message": "Unexpected use of '|='.",
+    "messageId": "unexpected",
+    "nodeType": "AssignmentExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 10,
+    "endLine": 5,
+    "line": 5,
+    "message": "Unexpected use of '&='.",
+    "messageId": "unexpected",
+    "nodeType": "AssignmentExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 10,
+    "endLine": 7,
+    "line": 7,
+    "message": "Unexpected use of '^='.",
+    "messageId": "unexpected",
+    "nodeType": "AssignmentExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 11,
+    "endLine": 9,
+    "line": 9,
+    "message": "Unexpected use of '<<='.",
+    "messageId": "unexpected",
+    "nodeType": "AssignmentExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 11,
+    "endLine": 11,
+    "line": 11,
+    "message": "Unexpected use of '>>='.",
+    "messageId": "unexpected",
+    "nodeType": "AssignmentExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 12,
+    "endLine": 13,
+    "line": 13,
+    "message": "Unexpected use of '>>>='.",
+    "messageId": "unexpected",
+    "nodeType": "AssignmentExpression",
+    "ruleId": "no-bitwise",
+    "severity": 2,
+  },
+]
+`;

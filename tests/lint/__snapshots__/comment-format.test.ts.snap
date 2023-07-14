@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`comment-format не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`comment-format не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`comment-format не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`comment-format не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`comment-format ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 12,
+    "endLine": 1,
+    "fix": Object {
+      "range": Array [
+        2,
+        2,
+      ],
+      "text": " ",
+    },
+    "line": 1,
+    "message": "Expected space or tab after '//' in comment.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Line",
+    "ruleId": "spaced-comment",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`comment-format ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 4,
+    "endLine": 3,
+    "fix": Object {
+      "range": Array [
+        2,
+        2,
+      ],
+      "text": " ",
+    },
+    "line": 1,
+    "message": "Expected space or tab after '/*' in comment.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Block",
+    "ruleId": "spaced-comment",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`comment-format ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 4,
+    "endLine": 3,
+    "fix": Object {
+      "range": Array [
+        3,
+        3,
+      ],
+      "text": " ",
+    },
+    "line": 1,
+    "message": "Expected space or tab after '/**' in comment.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Block",
+    "ruleId": "spaced-comment",
+    "severity": 1,
+  },
+]
+`;
