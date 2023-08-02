@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-non-null-assertion ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 30,
+    "endColumn": 38,
+    "endLine": 1,
+    "line": 1,
+    "message": "Forbidden non-null assertion.",
+    "messageId": "noNonNull",
+    "nodeType": "TSNonNullExpression",
+    "ruleId": "@typescript-eslint/no-non-null-assertion",
+    "severity": 2,
+    "suggestions": Array [
+      Object {
+        "desc": "Consider using the optional chain operator \`?.\` instead. This operator includes runtime checks, so it is safer than the compile-only non-null assertion operator.",
+        "fix": Object {
+          "range": Array [
+            36,
+            37,
+          ],
+          "text": "?",
+        },
+        "messageId": "suggestOptionalChain",
+      },
+    ],
+  },
+]
+`;

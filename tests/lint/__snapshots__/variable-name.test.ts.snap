@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`variable-name не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 4 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 5 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 6 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 7 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 8 1`] = `Array []`;
+
+exports[`variable-name не ошибки индекс теста: 9 1`] = `Array []`;
+
+exports[`variable-name ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "endColumn": 33,
+    "endLine": 1,
+    "line": 1,
+    "message": "Variable name \`___tripleLeadingUnderscore\` trimmed as \`__tripleLeadingUnderscore\` must match one of the following formats: camelCase, PascalCase, UPPER_CASE",
+    "messageId": "doesNotMatchFormatTrimmed",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`variable-name ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "endColumn": 32,
+    "endLine": 1,
+    "line": 1,
+    "message": "Variable name \`__doubleLeadingUnderscore\` trimmed as \`_doubleLeadingUnderscore\` must match one of the following formats: camelCase, PascalCase, UPPER_CASE",
+    "messageId": "doesNotMatchFormatTrimmed",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`variable-name ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "endColumn": 33,
+    "endLine": 1,
+    "line": 1,
+    "message": "Variable name \`doubleTrailingUnderscore__\` trimmed as \`doubleTrailingUnderscore_\` must match one of the following formats: camelCase, PascalCase, UPPER_CASE",
+    "messageId": "doesNotMatchFormatTrimmed",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`variable-name ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 32,
+    "endLine": 1,
+    "line": 1,
+    "message": "Variable name \`___tripleLeadingUnderscore1\` trimmed as \`__tripleLeadingUnderscore1\` must match one of the following formats: camelCase, PascalCase, UPPER_CASE",
+    "messageId": "doesNotMatchFormatTrimmed",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`variable-name ошибки индекс теста: 4 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 31,
+    "endLine": 1,
+    "line": 1,
+    "message": "Variable name \`__doubleLeadingUnderscore1\` trimmed as \`_doubleLeadingUnderscore1\` must match one of the following formats: camelCase, PascalCase, UPPER_CASE",
+    "messageId": "doesNotMatchFormatTrimmed",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`variable-name ошибки индекс теста: 5 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 32,
+    "endLine": 1,
+    "line": 1,
+    "message": "Variable name \`doubleTrailingUnderscore1__\` trimmed as \`doubleTrailingUnderscore1_\` must match one of the following formats: camelCase, PascalCase, UPPER_CASE",
+    "messageId": "doesNotMatchFormatTrimmed",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+  },
+]
+`;
