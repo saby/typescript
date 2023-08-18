@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-hooks/exhaustive-deps не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react-hooks/exhaustive-deps не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`react-hooks/exhaustive-deps не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`react-hooks/exhaustive-deps ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 6,
+    "endColumn": 8,
+    "endLine": 4,
+    "line": 4,
+    "message": "React Hook useCallback has a missing dependency: 'props.foo'. Either include it or remove the dependency array.",
+    "nodeType": "ArrayExpression",
+    "ruleId": "react-hooks/exhaustive-deps",
+    "severity": 1,
+    "suggestions": Array [
+      Object {
+        "desc": "Update the dependencies array to be: [props.foo]",
+        "fix": Object {
+          "range": Array [
+            85,
+            87,
+          ],
+          "text": "[props.foo]",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`react-hooks/exhaustive-deps ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 6,
+    "endColumn": 8,
+    "endLine": 5,
+    "line": 5,
+    "message": "React Hook useEffect has a missing dependency: 'local'. Either include it or remove the dependency array.",
+    "nodeType": "ArrayExpression",
+    "ruleId": "react-hooks/exhaustive-deps",
+    "severity": 1,
+    "suggestions": Array [
+      Object {
+        "desc": "Update the dependencies array to be: [local]",
+        "fix": Object {
+          "range": Array [
+            102,
+            104,
+          ],
+          "text": "[local]",
+        },
+      },
+    ],
+  },
+]
+`;
