@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`at-rule-empty-line-before ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 20,
+    "endLine": 2,
+    "line": 2,
+    "rule": "at-rule-empty-line-before",
+    "severity": "error",
+    "text": "Expected empty line before at-rule (at-rule-empty-line-before)",
+  },
+]
+`;

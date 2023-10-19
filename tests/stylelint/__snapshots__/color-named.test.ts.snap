@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`color-names ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 14,
+    "endLine": 2,
+    "line": 2,
+    "rule": "color-named",
+    "severity": "error",
+    "text": "Unexpected named color \\"red\\" (color-named)",
+  },
+]
+`;
