@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`semicolon не ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 6,
+    "endColumn": 1,
+    "endLine": 5,
+    "fix": Object {
+      "range": Array [
+        80,
+        80,
+      ],
+      "text": ";",
+    },
+    "line": 4,
+    "message": "Missing semicolon.",
+    "messageId": "missingSemi",
+    "nodeType": "PropertyDefinition",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+]
+`;
