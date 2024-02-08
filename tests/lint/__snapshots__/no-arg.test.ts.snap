@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-arg ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 20,
+    "endColumn": 36,
+    "endLine": 2,
+    "line": 2,
+    "message": "Avoid arguments.callee.",
+    "messageId": "unexpected",
+    "nodeType": "MemberExpression",
+    "ruleId": "no-caller",
+    "severity": 2,
+  },
+]
+`;
