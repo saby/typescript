@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-duplicate-super ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 9,
+    "endColumn": 16,
+    "endLine": 3,
+    "line": 3,
+    "message": "Unexpected 'super()'.",
+    "messageId": "unexpected",
+    "nodeType": "CallExpression",
+    "ruleId": "constructor-super",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-duplicate-super ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 6,
+    "line": 4,
+    "message": "Expected to call 'super()'.",
+    "messageId": "missingAll",
+    "nodeType": "MethodDefinition",
+    "ruleId": "constructor-super",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-duplicate-super ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 9,
+    "endColumn": 16,
+    "endLine": 4,
+    "line": 4,
+    "message": "Unexpected 'super()' because 'super' is not a constructor.",
+    "messageId": "badSuper",
+    "nodeType": "CallExpression",
+    "ruleId": "constructor-super",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-duplicate-super ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 4,
+    "line": 2,
+    "message": "Expected to call 'super()'.",
+    "messageId": "missingAll",
+    "nodeType": "MethodDefinition",
+    "ruleId": "constructor-super",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-duplicate-super ошибки индекс теста: 4 1`] = `
+Array [
+  Object {
+    "column": 9,
+    "endColumn": 16,
+    "endLine": 4,
+    "line": 4,
+    "message": "Unexpected duplicate 'super()'.",
+    "messageId": "duplicate",
+    "nodeType": "CallExpression",
+    "ruleId": "constructor-super",
+    "severity": 2,
+  },
+]
+`;
