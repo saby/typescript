@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-string-literal не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-string-literal не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`no-string-literal ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 15,
+    "endColumn": 22,
+    "endLine": 2,
+    "fix": Object {
+      "range": Array [
+        67,
+        76,
+      ],
+      "text": ".class",
+    },
+    "line": 2,
+    "message": "[\\"class\\"] is better written in dot notation.",
+    "messageId": "useDot",
+    "nodeType": "Literal",
+    "ruleId": "dot-notation",
+    "severity": 2,
+  },
+]
+`;
