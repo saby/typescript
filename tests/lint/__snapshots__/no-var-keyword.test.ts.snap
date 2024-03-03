@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-var-keyword ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 13,
+    "endLine": 1,
+    "fix": Object {
+      "range": Array [
+        0,
+        3,
+      ],
+      "text": "let",
+    },
+    "line": 1,
+    "message": "Unexpected var, use let or const instead.",
+    "messageId": "unexpectedVar",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "no-var",
+    "severity": 2,
+  },
+]
+`;

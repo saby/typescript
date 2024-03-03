@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`forin не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`forin ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 2,
+    "endLine": 5,
+    "line": 3,
+    "message": "The body of a for-in should be wrapped in an if statement to filter unwanted properties from the prototype.",
+    "messageId": "wrap",
+    "nodeType": "ForInStatement",
+    "ruleId": "guard-for-in",
+    "severity": 2,
+  },
+]
+`;
