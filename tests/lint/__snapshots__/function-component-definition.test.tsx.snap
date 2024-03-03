@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/function-component-definition не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/function-component-definition не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`react/function-component-definition не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`react/function-component-definition ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 19,
+    "endColumn": 2,
+    "endLine": 3,
+    "fix": Object {
+      "range": Array [
+        0,
+        70,
+      ],
+      "text": "function Component(props) {
+  return <div>{props.content}</div>;
+}",
+    },
+    "line": 1,
+    "message": "Function component is not a function declaration",
+    "messageId": "function-declaration",
+    "nodeType": "ArrowFunctionExpression",
+    "ruleId": "react/function-component-definition",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`react/function-component-definition ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "endColumn": 4,
+    "endLine": 4,
+    "fix": Object {
+      "range": Array [
+        35,
+        90,
+      ],
+      "text": "function(props) {
+    return <div>{props.content}</div>;
+  }",
+    },
+    "line": 2,
+    "message": "Function component is not a function expression",
+    "messageId": "function-expression",
+    "nodeType": "ArrowFunctionExpression",
+    "ruleId": "react/function-component-definition",
+    "severity": 2,
+  },
+]
+`;

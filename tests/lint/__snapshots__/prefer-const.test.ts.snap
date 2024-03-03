@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`prefer-const не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`prefer-const ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 1,
+    "fix": Object {
+      "range": Array [
+        0,
+        10,
+      ],
+      "text": "const a = 1;",
+    },
+    "line": 1,
+    "message": "'a' is never reassigned. Use 'const' instead.",
+    "messageId": "useConst",
+    "nodeType": "Identifier",
+    "ruleId": "prefer-const",
+    "severity": 2,
+  },
+]
+`;
