@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-conditional-assignment не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-conditional-assignment ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 11,
+    "endLine": 2,
+    "line": 2,
+    "message": "Unexpected assignment within an 'if' statement.",
+    "messageId": "unexpected",
+    "nodeType": "AssignmentExpression",
+    "ruleId": "no-cond-assign",
+    "severity": 1,
+  },
+]
+`;

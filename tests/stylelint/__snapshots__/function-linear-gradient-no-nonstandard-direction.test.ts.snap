@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`function-linear-gradient-no-nonstandard-direction не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`function-linear-gradient-no-nonstandard-direction ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 32,
+    "endColumn": 35,
+    "endLine": 2,
+    "line": 2,
+    "rule": "function-linear-gradient-no-nonstandard-direction",
+    "severity": "error",
+    "text": "Unexpected nonstandard direction (function-linear-gradient-no-nonstandard-direction)",
+  },
+]
+`;
