@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/no-danger-with-children не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/no-danger-with-children не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`react/no-danger-with-children ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "endColumn": 7,
+    "endLine": 4,
+    "line": 2,
+    "message": "Only set one of \`children\` or \`props.dangerouslySetInnerHTML\`",
+    "messageId": "dangerWithChildren",
+    "nodeType": "JSXElement",
+    "ruleId": "react/no-danger-with-children",
+    "severity": 2,
+  },
+]
+`;

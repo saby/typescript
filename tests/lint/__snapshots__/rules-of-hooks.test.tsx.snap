@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-hooks/rules-of-hooks не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react-hooks/rules-of-hooks ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 23,
+    "endLine": 3,
+    "line": 3,
+    "message": "React Hook \\"useConditionalHook\\" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+    "nodeType": "Identifier",
+    "ruleId": "react-hooks/rules-of-hooks",
+    "severity": 2,
+  },
+]
+`;
