@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "importHelpers": true,
+    "lib": ["dom", "es2020", "scripthost"],
+    "module": "amd",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "downlevelIteration": true,
+    "paths": {
+      "Core/*": ["WS.Core/core/*"],
+      "Lib/*": ["WS.Core/lib/*"],
+      "Transport/*": ["WS.Core/transport/*"]
+    },
+    "target": "es5",
+    "types" : ["requirejs"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
