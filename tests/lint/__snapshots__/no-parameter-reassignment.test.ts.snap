@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-parameter-reassignment не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-parameter-reassignment ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 8,
+    "endLine": 2,
+    "line": 2,
+    "message": "Assignment to function parameter 'bar'.",
+    "messageId": "assignmentToFunctionParam",
+    "nodeType": "Identifier",
+    "ruleId": "no-param-reassign",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-parameter-reassignment ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 8,
+    "endLine": 2,
+    "line": 2,
+    "message": "Assignment to function parameter 'bar'.",
+    "messageId": "assignmentToFunctionParam",
+    "nodeType": "Identifier",
+    "ruleId": "no-param-reassign",
+    "severity": 1,
+  },
+]
+`;
