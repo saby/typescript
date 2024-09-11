@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`radix не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`radix ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 13,
+    "endColumn": 28,
+    "endLine": 1,
+    "line": 1,
+    "message": "Missing radix parameter.",
+    "messageId": "missingRadix",
+    "nodeType": "CallExpression",
+    "ruleId": "radix",
+    "severity": 2,
+    "suggestions": Array [
+      Object {
+        "desc": "Add radix parameter \`10\` for parsing decimal numbers.",
+        "fix": Object {
+          "range": Array [
+            26,
+            26,
+          ],
+          "text": ", 10",
+        },
+        "messageId": "addRadixParameter10",
+      },
+    ],
+  },
+]
+`;

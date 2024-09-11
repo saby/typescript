@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`declaration-block-no-shorthand-property-overrides не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`declaration-block-no-shorthand-property-overrides ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 14,
+    "endLine": 3,
+    "line": 3,
+    "rule": "declaration-block-no-shorthand-property-overrides",
+    "severity": "error",
+    "text": "Unexpected shorthand \\"background\\" after \\"background-repeat\\" (declaration-block-no-shorthand-property-overrides)",
+  },
+]
+`;
