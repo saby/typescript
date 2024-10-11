@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TypeScript Errors</title>
+    <style>
+        .root {
+            display: flex;
+        }
+
+        .tsLogs-modulesList {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            height: fit-content;
+            flex-shrink: 0;
+        }
+
+        .tsLogs-modulesList__module {
+            display: contents;
+            cursor: pointer;
+        }
+
+        .tsLogs-modulesList__number {
+            color: red;
+        }
+
+        .tsLogs-modulesList__module_selected {
+            font-weight: bold;
+        }
+
+        .tsLogs-errorsList {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            margin-right: 10px;
+            height: fit-content;
+        }
+
+        .tsLogs-errorsList__cell {
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function loadMeta() {
+            return fetch('./meta.json').then((meta) => {
+               return meta.json();
+            }).catch((err) => {
+               console.error(`Возникла ошибка при вычитывании метаданных: ${err}`);
+            });
+        }
+        function loadData(meta) {
+           const promises = meta.files.map((fileName) => {
+              return fetch(`./${fileName}`).then((file) => {
+                 return file.json();
+              });
+           });
+           return Promise.all(promises).then((...files) => {
+                return files.flat(2);
+           }).catch((err) => {
+              console.error(`Возникла ошибка при вычитывании данных с ошибками: ${err}`);
+           });
+        }
+        function ModulesList(numberOfErrorsByModule, selectedModule, onSelectedChange) {
+           const container = document.createElement('div');
+           container.classList.add('tsLogs-modulesList');
+           const selectedClass = 'tsLogs-modulesList__module_selected';
+           let selectedElement;
+           Object.entries(numberOfErrorsByModule).forEach(([moduleName, numberOfErrors]) => {
+              const elem = document.createElement('div');
+              elem.setAttribute('data-moduleName', moduleName);
+              elem.classList.add('tsLogs-modulesList__module');
+              if (moduleName === selectedModule) {
+                 elem.classList.add(selectedClass);
+                 selectedElement = elem;
+              }
+              const num = document.createElement('span');
+              num.classList.add('tsLogs-modulesList__number');
+              num.textContent = numberOfErrors;
+              elem.append(`${moduleName} `, num);
+              container.appendChild(elem);
+           });
+           container.addEventListener('click', (e) => {
+              const target = e.target.closest('[data-moduleName]');
+              onSelectedChange(target.dataset.modulename);
+              selectedElement.classList.remove(selectedClass);
+              target.classList.add(selectedClass);
+              selectedElement = target;
+           });
+           return container;
+        }
+        function ErrorsList(errors) {
+            const container = document.createElement('div');
+            container.classList.add('tsLogs-errorsList');
+
+            const cellClass = 'tsLogs-errorsList__cell';
+
+            function addCell(value) {
+               const cell = document.createElement('div');
+               cell.classList.add(cellClass);
+               cell.textContent = value;
+               container.appendChild(cell);
+            }
+
+            addCell('Файл');
+            addCell('Ошибка');
+            errors.forEach(({ file, message }) => {
+               addCell(`${file.path}${file.loc}`);
+               addCell(message);
+            });
+
+            return container;
+        }
+        async function App() {
+           const rawData = await loadData(await loadMeta());
+           const numberOfErrorsByModule = {};
+           const errorsByModule = {};
+           const root = document.querySelector('.root');
+           rawData.forEach((error) => {
+              const module = error.location.module;
+              if (!numberOfErrorsByModule.hasOwnProperty(module)) {
+                 numberOfErrorsByModule[module] = 0;
+                 errorsByModule[module] = [];
+              }
+              numberOfErrorsByModule[module]++;
+              errorsByModule[module].push(error);
+           });
+           document.body.prepend(`Всего ошибок: ${rawData.length}.`);
+           let selectedModule = rawData[0].location.module;
+           root.appendChild(ModulesList(numberOfErrorsByModule, selectedModule, onModuleChange));
+           let errorsList = ErrorsList(errorsByModule[selectedModule]);
+           root.appendChild(errorsList);
+           function onModuleChange(newSelectedModule) {
+              errorsList.remove();
+              errorsList = ErrorsList(errorsByModule[newSelectedModule]);
+              root.appendChild(errorsList);
+           }
+        }
+        App();
+    </script>
+</head>
+<body>
+    <div class="root"></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ban-types ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 8,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Don't use \`Deferred\` as a type. Use Promise instead.",
+    "messageId": "bannedTypeMessage",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/ban-types",
+    "severity": 2,
+  },
+]
+`;
