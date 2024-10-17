@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`typedef-whitespace не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`typedef-whitespace не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`typedef-whitespace не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`typedef-whitespace не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`typedef-whitespace ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "endColumn": 11,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected a space after the ':'.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 12,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected a space after the ':'.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+  Object {
+    "column": 11,
+    "endColumn": 12,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected space before the ':'.",
+    "messageId": "unexpectedSpaceBefore",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 12,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected space before the ':'.",
+    "messageId": "unexpectedSpaceBefore",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 15,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected a space after the ':'.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 4 1`] = `
+Array [
+  Object {
+    "column": 16,
+    "endColumn": 17,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected a space after the ':'.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+  Object {
+    "column": 16,
+    "endColumn": 17,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected space before the ':'.",
+    "messageId": "unexpectedSpaceBefore",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 5 1`] = `
+Array [
+  Object {
+    "column": 16,
+    "endColumn": 17,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected space before the ':'.",
+    "messageId": "unexpectedSpaceBefore",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 6 1`] = `
+Array [
+  Object {
+    "column": 9,
+    "endColumn": 10,
+    "endLine": 2,
+    "line": 2,
+    "message": "Expected a space after the ':'.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 7 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "endColumn": 11,
+    "endLine": 2,
+    "line": 2,
+    "message": "Expected a space after the ':'.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+  Object {
+    "column": 10,
+    "endColumn": 11,
+    "endLine": 2,
+    "line": 2,
+    "message": "Unexpected space before the ':'.",
+    "messageId": "unexpectedSpaceBefore",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 8 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "endColumn": 11,
+    "endLine": 2,
+    "line": 2,
+    "message": "Unexpected space before the ':'.",
+    "messageId": "unexpectedSpaceBefore",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 9 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected a space after the '=>'.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+  Object {
+    "column": 14,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected a space before the '=>'.",
+    "messageId": "expectedSpaceBefore",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 10 1`] = `
+Array [
+  Object {
+    "column": 15,
+    "endColumn": 17,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected a space after the '=>'.",
+    "messageId": "expectedSpaceAfter",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`typedef-whitespace ошибки индекс теста: 11 1`] = `
+Array [
+  Object {
+    "column": 14,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected a space before the '=>'.",
+    "messageId": "expectedSpaceBefore",
+    "nodeType": "Punctuator",
+    "ruleId": "@typescript-eslint/type-annotation-spacing",
+    "severity": 2,
+  },
+]
+`;

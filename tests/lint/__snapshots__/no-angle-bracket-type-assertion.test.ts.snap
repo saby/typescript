@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-angle-bracket-type-assertion не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-angle-bracket-type-assertion не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`no-angle-bracket-type-assertion не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`no-angle-bracket-type-assertion не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`no-angle-bracket-type-assertion не ошибки индекс теста: 4 1`] = `Array []`;
+
+exports[`no-angle-bracket-type-assertion не ошибки индекс теста: 5 1`] = `Array []`;
+
+exports[`no-angle-bracket-type-assertion ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 15,
+    "endColumn": 28,
+    "endLine": 10,
+    "line": 10,
+    "message": "Use 'as ITest' instead of '<ITest>'.",
+    "messageId": "as",
+    "nodeType": "TSTypeAssertion",
+    "ruleId": "@typescript-eslint/consistent-type-assertions",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-angle-bracket-type-assertion ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 12,
+    "endColumn": 6,
+    "endLine": 14,
+    "line": 11,
+    "message": "Use 'as ITest' instead of '<ITest>'.",
+    "messageId": "as",
+    "nodeType": "TSTypeAssertion",
+    "ruleId": "@typescript-eslint/consistent-type-assertions",
+    "severity": 1,
+  },
+]
+`;

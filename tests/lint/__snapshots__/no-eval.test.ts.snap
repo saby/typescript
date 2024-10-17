@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-eval ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 5,
+    "endLine": 1,
+    "line": 1,
+    "message": "eval can be harmful.",
+    "messageId": "unexpected",
+    "nodeType": "CallExpression",
+    "ruleId": "no-eval",
+    "severity": 2,
+  },
+]
+`;

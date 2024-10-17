@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`font-family-no-missing-generic-family-keyword не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`font-family-no-missing-generic-family-keyword не ошибки индекс теста: 0 2`] = `Array []`;
+
+exports[`font-family-no-missing-generic-family-keyword не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`font-family-no-missing-generic-family-keyword не ошибки индекс теста: 1 2`] = `Array []`;
+
+exports[`font-family-no-missing-generic-family-keyword не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`font-family-no-missing-generic-family-keyword не ошибки индекс теста: 2 2`] = `Array []`;
+
+exports[`font-family-no-missing-generic-family-keyword ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 17,
+    "endColumn": 22,
+    "endLine": 2,
+    "line": 2,
+    "rule": "font-family-no-missing-generic-family-keyword",
+    "severity": "error",
+    "text": "Unexpected missing generic font family (font-family-no-missing-generic-family-keyword)",
+  },
+]
+`;
+
+exports[`font-family-no-missing-generic-family-keyword ошибки индекс теста: 0 2`] = `Array []`;

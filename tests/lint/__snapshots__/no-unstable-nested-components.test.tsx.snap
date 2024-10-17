@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/no-unstable-nested-components не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/no-unstable-nested-components не ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 24,
+    "endColumn": 29,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected props to have a type annotation.",
+    "messageId": "expectedTypedefNamed",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/typedef",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`react/no-unstable-nested-components ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 3,
+    "endColumn": 4,
+    "endLine": 4,
+    "line": 2,
+    "message": "Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state (https://reactjs.org/docs/reconciliation.html#elements-of-different-types). Instead, move this component definition out of the parent component “Component” and pass data as props.",
+    "nodeType": "FunctionDeclaration",
+    "ruleId": "react/no-unstable-nested-components",
+    "severity": 2,
+  },
+]
+`;
