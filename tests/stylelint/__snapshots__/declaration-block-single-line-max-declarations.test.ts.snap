@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`declaration-block-single-line-max-declarations ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 8,
+    "endColumn": 32,
+    "endLine": 1,
+    "line": 1,
+    "rule": "declaration-block-single-line-max-declarations",
+    "severity": "error",
+    "text": "Expected no more than 0 declarations (declaration-block-single-line-max-declarations)",
+  },
+]
+`;
+
+exports[`declaration-block-single-line-max-declarations ошибки индекс теста: 0 2`] = `Array []`;
