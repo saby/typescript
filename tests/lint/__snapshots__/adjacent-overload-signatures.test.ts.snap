@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adjacent-overload-signatures ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 34,
+    "endLine": 3,
+    "line": 3,
+    "message": "All test signatures should be adjacent.",
+    "messageId": "adjacentSignature",
+    "nodeType": "TSDeclareFunction",
+    "ruleId": "@typescript-eslint/adjacent-overload-signatures",
+    "severity": 2,
+  },
+]
+`;

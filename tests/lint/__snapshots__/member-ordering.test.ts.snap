@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`member-ordering не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`member-ordering ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 9,
+    "line": 7,
+    "message": "Member method should be declared before all static field definitions.",
+    "messageId": "incorrectGroupOrder",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/member-ordering",
+    "severity": 1,
+  },
+]
+`;

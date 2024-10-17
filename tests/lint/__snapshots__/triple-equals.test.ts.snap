@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`triple-equals не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`triple-equals не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`triple-equals не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`triple-equals не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`triple-equals ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "endColumn": 9,
+    "endLine": 3,
+    "line": 3,
+    "message": "Expected '===' and instead saw '=='.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "eqeqeq",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`triple-equals ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 8,
+    "endColumn": 10,
+    "endLine": 3,
+    "line": 3,
+    "message": "Expected '===' and instead saw '=='.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "eqeqeq",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`triple-equals ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "endColumn": 12,
+    "endLine": 3,
+    "line": 3,
+    "message": "Expected '===' and instead saw '=='.",
+    "messageId": "unexpected",
+    "nodeType": "BinaryExpression",
+    "ruleId": "eqeqeq",
+    "severity": 2,
+  },
+]
+`;

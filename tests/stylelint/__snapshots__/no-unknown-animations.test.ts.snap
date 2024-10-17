@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-unknown-animations не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-unknown-animations ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 20,
+    "endColumn": 31,
+    "endLine": 2,
+    "line": 2,
+    "rule": "no-unknown-animations",
+    "severity": "error",
+    "text": "Unexpected unknown animation name \\"fancy-slide\\" (no-unknown-animations)",
+  },
+]
+`;

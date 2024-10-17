@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`declaration-no-important ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 16,
+    "endColumn": 26,
+    "endLine": 2,
+    "line": 2,
+    "rule": "declaration-no-important",
+    "severity": "error",
+    "text": "Unexpected !important (declaration-no-important)",
+  },
+]
+`;
