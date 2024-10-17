@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`class-name не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`class-name не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`class-name ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "endColumn": 14,
+    "endLine": 1,
+    "line": 1,
+    "message": "Class name \`myClass\` must match one of the following formats: PascalCase",
+    "messageId": "doesNotMatchFormat",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`class-name ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 22,
+    "endLine": 1,
+    "line": 1,
+    "message": "Interface name \`myInterface\` must match one of the following formats: PascalCase",
+    "messageId": "doesNotMatchFormat",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+  },
+]
+`;

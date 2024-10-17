@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`object-literal-shorthand не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`object-literal-shorthand ошибки const y = 1;
+const z = 1;
+индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 6,
+    "line": 4,
+    "message": "Expected method shorthand.",
+    "messageId": "expectedMethodShorthand",
+    "nodeType": "Property",
+    "ruleId": "object-shorthand",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 9,
+    "line": 7,
+    "message": "Expected method shorthand.",
+    "messageId": "expectedMethodShorthand",
+    "nodeType": "Property",
+    "ruleId": "object-shorthand",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 9,
+    "endLine": 10,
+    "line": 10,
+    "message": "Expected property shorthand.",
+    "messageId": "expectedPropertyShorthand",
+    "nodeType": "Property",
+    "ruleId": "object-shorthand",
+    "severity": 2,
+  },
+]
+`;
