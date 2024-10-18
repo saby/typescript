@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`unified-signatures не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`unified-signatures ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 12,
+    "endColumn": 21,
+    "endLine": 2,
+    "line": 2,
+    "message": "These overloads can be combined into one signature taking \`number | string\`.",
+    "messageId": "singleParameterDifference",
+    "nodeType": "Identifier",
+    "ruleId": "@typescript-eslint/unified-signatures",
+    "severity": 2,
+  },
+]
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-var-requires не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-var-requires не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`no-var-requires ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 13,
+    "endColumn": 27,
+    "endLine": 1,
+    "line": 1,
+    "message": "Require statement not part of import statement.",
+    "messageId": "noVarReqs",
+    "nodeType": "CallExpression",
+    "ruleId": "@typescript-eslint/no-var-requires",
+    "severity": 2,
+  },
+]
+`;

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ban-types не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`ban-types не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`ban-types не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`ban-types ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 18,
+    "endLine": 1,
+    "fix": Object {
+      "range": Array [
+        9,
+        10,
+      ],
+      "text": "; let",
+    },
+    "line": 1,
+    "message": "Split 'let' declarations into multiple statements.",
+    "messageId": "split",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "one-var",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-types ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 20,
+    "endLine": 1,
+    "fix": Object {
+      "range": Array [
+        11,
+        12,
+      ],
+      "text": "; const",
+    },
+    "line": 1,
+    "message": "Split 'const' declarations into multiple statements.",
+    "messageId": "split",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "one-var",
+    "severity": 2,
+  },
+]
+`;

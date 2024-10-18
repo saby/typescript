@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`prefer-object-spread не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`prefer-object-spread ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 33,
+    "endLine": 5,
+    "fix": Object {
+      "range": Array [
+        41,
+        63,
+      ],
+      "text": "{ ...foo}",
+    },
+    "line": 5,
+    "message": "Use an object spread instead of \`Object.assign\` eg: \`{ ...foo }\`.",
+    "messageId": "useSpreadMessage",
+    "nodeType": "CallExpression",
+    "ruleId": "prefer-object-spread",
+    "severity": 2,
+  },
+]
+`;
