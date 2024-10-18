@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-unsafe-finally не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-unsafe-finally ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 9,
+    "endColumn": 19,
+    "endLine": 7,
+    "line": 7,
+    "message": "Unsafe usage of ReturnStatement.",
+    "messageId": "unsafeUsage",
+    "nodeType": "ReturnStatement",
+    "ruleId": "no-unsafe-finally",
+    "severity": 2,
+  },
+]
+`;
