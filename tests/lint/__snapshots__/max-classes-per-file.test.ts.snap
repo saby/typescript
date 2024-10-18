@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`max-classes-per-file не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`max-classes-per-file ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 1,
+    "endLine": 16,
+    "line": 1,
+    "message": "File has too many classes (8). Maximum allowed is 7.",
+    "messageId": "maximumExceeded",
+    "nodeType": "Program",
+    "ruleId": "max-classes-per-file",
+    "severity": 2,
+  },
+]
+`;
