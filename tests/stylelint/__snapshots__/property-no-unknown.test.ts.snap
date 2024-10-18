@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`property-no-unknown не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`property-no-unknown не ошибки индекс теста: 0 2`] = `Array []`;
+
+exports[`property-no-unknown ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 10,
+    "endLine": 2,
+    "line": 2,
+    "rule": "property-no-unknown",
+    "severity": "error",
+    "text": "Unexpected unknown property \\"heigth\\" (property-no-unknown)",
+  },
+]
+`;
+
+exports[`property-no-unknown ошибки индекс теста: 0 2`] = `Array []`;
