@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ban-tslint-comment ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 21,
+    "endLine": 1,
+    "line": 1,
+    "message": "tslint comment detected: \\"/* tslint:disable */\\"",
+    "messageId": "commentDetected",
+    "nodeType": "Block",
+    "ruleId": "@typescript-eslint/ban-tslint-comment",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-tslint-comment ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 20,
+    "endLine": 1,
+    "line": 1,
+    "message": "tslint comment detected: \\"/* tslint:enable */\\"",
+    "messageId": "commentDetected",
+    "nodeType": "Block",
+    "ruleId": "@typescript-eslint/ban-tslint-comment",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-tslint-comment ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 42,
+    "endLine": 1,
+    "line": 1,
+    "message": "tslint comment detected: \\"/* tslint:disable:rule1 rule2 rule3... */\\"",
+    "messageId": "commentDetected",
+    "nodeType": "Block",
+    "ruleId": "@typescript-eslint/ban-tslint-comment",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-tslint-comment ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 41,
+    "endLine": 1,
+    "line": 1,
+    "message": "tslint comment detected: \\"/* tslint:enable:rule1 rule2 rule3... */\\"",
+    "messageId": "commentDetected",
+    "nodeType": "Block",
+    "ruleId": "@typescript-eslint/ban-tslint-comment",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-tslint-comment ошибки индекс теста: 4 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 28,
+    "endLine": 1,
+    "line": 1,
+    "message": "tslint comment detected: \\"// tslint:disable-next-line\\"",
+    "messageId": "commentDetected",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/ban-tslint-comment",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-tslint-comment ошибки индекс теста: 5 1`] = `
+Array [
+  Object {
+    "column": 13,
+    "endColumn": 35,
+    "endLine": 1,
+    "line": 1,
+    "message": "tslint comment detected: \\"// tslint:disable-line\\"",
+    "messageId": "commentDetected",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/ban-tslint-comment",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-tslint-comment ошибки индекс теста: 6 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 49,
+    "endLine": 1,
+    "line": 1,
+    "message": "tslint comment detected: \\"// tslint:disable-next-line:rule1 rule2 rule3...\\"",
+    "messageId": "commentDetected",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/ban-tslint-comment",
+    "severity": 2,
+  },
+]
+`;

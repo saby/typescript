@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/jsx-no-useless-fragment не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/jsx-no-useless-fragment ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "endColumn": 4,
+    "endLine": 4,
+    "line": 2,
+    "message": "Fragments should contain more than one child - otherwise, there’s no need for a Fragment at all.",
+    "messageId": "NeedsMoreChildren",
+    "nodeType": "JSXFragment",
+    "ruleId": "react/jsx-no-useless-fragment",
+    "severity": 2,
+  },
+]
+`;
