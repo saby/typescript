@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`label-position не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`label-position не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`label-position не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`label-position не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`label-position не ошибки индекс теста: 4 1`] = `Array []`;
+
+exports[`label-position ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 2,
+    "endLine": 3,
+    "line": 1,
+    "message": "Unexpected labeled statement.",
+    "messageId": "unexpectedLabel",
+    "nodeType": "LabeledStatement",
+    "ruleId": "no-labels",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 17,
+    "endLine": 2,
+    "line": 2,
+    "message": "Unexpected label in break statement.",
+    "messageId": "unexpectedLabelInBreak",
+    "nodeType": "BreakStatement",
+    "ruleId": "no-labels",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`label-position ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 6,
+    "endLine": 4,
+    "line": 1,
+    "message": "Unexpected labeled statement.",
+    "messageId": "unexpectedLabel",
+    "nodeType": "LabeledStatement",
+    "ruleId": "no-labels",
+    "severity": 2,
+  },
+  Object {
+    "column": 9,
+    "endColumn": 21,
+    "endLine": 3,
+    "line": 3,
+    "message": "Unexpected label in break statement.",
+    "messageId": "unexpectedLabelInBreak",
+    "nodeType": "BreakStatement",
+    "ruleId": "no-labels",
+    "severity": 2,
+  },
+]
+`;

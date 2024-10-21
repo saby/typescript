@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-switch-case-fall-through не ошибки индекс теста: 0 1`] = `Array []`;

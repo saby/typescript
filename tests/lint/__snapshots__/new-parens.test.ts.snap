@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`new-parens не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`new-parens не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`new-parens ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 16,
+    "endColumn": 26,
+    "endLine": 2,
+    "line": 2,
+    "message": "Missing '()' invoking a constructor.",
+    "messageId": "missing",
+    "nodeType": "NewExpression",
+    "ruleId": "new-parens",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`new-parens ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 17,
+    "endColumn": 29,
+    "endLine": 2,
+    "line": 2,
+    "message": "Missing '()' invoking a constructor.",
+    "messageId": "missing",
+    "nodeType": "NewExpression",
+    "ruleId": "new-parens",
+    "severity": 2,
+  },
+]
+`;
