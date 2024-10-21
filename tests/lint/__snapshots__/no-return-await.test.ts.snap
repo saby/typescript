@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-return-await не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-return-await ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 12,
+    "endColumn": 23,
+    "endLine": 5,
+    "line": 5,
+    "message": "Redundant use of \`await\` on a return value.",
+    "messageId": "redundantUseOfAwait",
+    "nodeType": "Identifier",
+    "ruleId": "no-return-await",
+    "severity": 2,
+  },
+]
+`;

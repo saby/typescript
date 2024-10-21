@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ban-comma-operator не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`ban-comma-operator не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`ban-comma-operator не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`ban-comma-operator не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`ban-comma-operator не ошибки индекс теста: 4 1`] = `Array []`;
+
+exports[`ban-comma-operator ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 2,
+    "endColumn": 3,
+    "endLine": 7,
+    "line": 7,
+    "message": "Unexpected use of comma operator.",
+    "messageId": "unexpectedCommaExpression",
+    "nodeType": "SequenceExpression",
+    "ruleId": "no-sequences",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-comma-operator ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 23,
+    "endColumn": 24,
+    "endLine": 8,
+    "line": 8,
+    "message": "Unexpected use of comma operator.",
+    "messageId": "unexpectedCommaExpression",
+    "nodeType": "SequenceExpression",
+    "ruleId": "no-sequences",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-comma-operator ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 21,
+    "endColumn": 22,
+    "endLine": 6,
+    "line": 6,
+    "message": "Unexpected use of comma operator.",
+    "messageId": "unexpectedCommaExpression",
+    "nodeType": "SequenceExpression",
+    "ruleId": "no-sequences",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-comma-operator ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 18,
+    "endColumn": 19,
+    "endLine": 6,
+    "line": 6,
+    "message": "Unexpected use of comma operator.",
+    "messageId": "unexpectedCommaExpression",
+    "nodeType": "SequenceExpression",
+    "ruleId": "no-sequences",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-comma-operator ошибки индекс теста: 4 1`] = `
+Array [
+  Object {
+    "column": 28,
+    "endColumn": 29,
+    "endLine": 6,
+    "line": 6,
+    "message": "Unexpected use of comma operator.",
+    "messageId": "unexpectedCommaExpression",
+    "nodeType": "SequenceExpression",
+    "ruleId": "no-sequences",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`ban-comma-operator ошибки индекс теста: 5 1`] = `
+Array [
+  Object {
+    "column": 27,
+    "endColumn": 28,
+    "endLine": 6,
+    "line": 6,
+    "message": "Unexpected use of comma operator.",
+    "messageId": "unexpectedCommaExpression",
+    "nodeType": "SequenceExpression",
+    "ruleId": "no-sequences",
+    "severity": 2,
+  },
+]
+`;
