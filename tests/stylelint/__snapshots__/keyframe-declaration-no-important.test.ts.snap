@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`keyframe-declaration-no-important ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 18,
+    "endColumn": 28,
+    "endLine": 7,
+    "line": 7,
+    "rule": "declaration-no-important",
+    "severity": "error",
+    "text": "Unexpected !important (declaration-no-important)",
+  },
+  Object {
+    "column": 18,
+    "endColumn": 28,
+    "endLine": 7,
+    "line": 7,
+    "rule": "keyframe-declaration-no-important",
+    "severity": "error",
+    "text": "Unexpected !important (keyframe-declaration-no-important)",
+  },
+]
+`;

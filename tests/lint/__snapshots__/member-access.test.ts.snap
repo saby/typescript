@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`member-access не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`member-access ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 31,
+    "endLine": 2,
+    "fix": Object {
+      "range": Array [
+        17,
+        24,
+      ],
+      "text": "",
+    },
+    "line": 2,
+    "message": "Public accessibility modifier on class property animalName.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "PropertyDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 5,
+    "fix": Object {
+      "range": Array [
+        48,
+        55,
+      ],
+      "text": "",
+    },
+    "line": 3,
+    "message": "Public accessibility modifier on method definition constructor.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 8,
+    "fix": Object {
+      "range": Array [
+        125,
+        132,
+      ],
+      "text": "",
+    },
+    "line": 6,
+    "message": "Public accessibility modifier on get property accessor name.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 11,
+    "fix": Object {
+      "range": Array [
+        195,
+        202,
+      ],
+      "text": "",
+    },
+    "line": 9,
+    "message": "Public accessibility modifier on set property accessor name.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 14,
+    "fix": Object {
+      "range": Array [
+        271,
+        278,
+      ],
+      "text": "",
+    },
+    "line": 12,
+    "message": "Public accessibility modifier on method definition walk.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+]
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/no-array-index-key не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/no-array-index-key ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 24,
+    "endColumn": 29,
+    "endLine": 10,
+    "line": 10,
+    "message": "Do not use Array index in keys",
+    "messageId": "noArrayIndex",
+    "nodeType": "Identifier",
+    "ruleId": "react/no-array-index-key",
+    "severity": 2,
+  },
+]
+`;

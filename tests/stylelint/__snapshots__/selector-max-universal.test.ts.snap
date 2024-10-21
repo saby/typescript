@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selector-max-universal ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 2,
+    "endLine": 1,
+    "line": 1,
+    "rule": "selector-max-universal",
+    "severity": "error",
+    "text": "Expected \\"*\\" to have no more than 0 universal selectors (selector-max-universal)",
+  },
+]
+`;

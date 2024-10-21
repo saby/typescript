@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`trailing-comma не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`trailing-comma не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`trailing-comma не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`trailing-comma не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`trailing-comma не ошибки индекс теста: 4 1`] = `Array []`;

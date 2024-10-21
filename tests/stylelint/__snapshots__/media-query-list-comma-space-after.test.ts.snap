@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`media-query-list-comma-space-after не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`media-query-list-comma-space-after ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 26,
+    "endColumn": 27,
+    "endLine": 1,
+    "line": 1,
+    "rule": "media-query-list-comma-space-after",
+    "severity": "error",
+    "text": "Expected single space after \\",\\" in a single-line list (media-query-list-comma-space-after)",
+  },
+]
+`;
