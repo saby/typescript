@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selector-pseudo-class-no-unknown не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`selector-pseudo-class-no-unknown не ошибки индекс теста: 0 2`] = `Array []`;
+
+exports[`selector-pseudo-class-no-unknown ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "endColumn": 13,
+    "endLine": 1,
+    "line": 1,
+    "rule": "selector-pseudo-class-no-unknown",
+    "severity": "error",
+    "text": "Unexpected unknown pseudo-class selector \\":hoevr\\" (selector-pseudo-class-no-unknown)",
+  },
+]
+`;
+
+exports[`selector-pseudo-class-no-unknown ошибки индекс теста: 0 2`] = `Array []`;

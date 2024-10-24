@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-namespace ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 14,
+    "endLine": 1,
+    "line": 1,
+    "message": "ES2015 module syntax is preferred over namespaces.",
+    "messageId": "moduleSyntaxIsPreferred",
+    "nodeType": "TSModuleDeclaration",
+    "ruleId": "@typescript-eslint/no-namespace",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-namespace ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 17,
+    "endLine": 1,
+    "line": 1,
+    "message": "ES2015 module syntax is preferred over namespaces.",
+    "messageId": "moduleSyntaxIsPreferred",
+    "nodeType": "TSModuleDeclaration",
+    "ruleId": "@typescript-eslint/no-namespace",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-namespace ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 22,
+    "endLine": 1,
+    "line": 1,
+    "message": "ES2015 module syntax is preferred over namespaces.",
+    "messageId": "moduleSyntaxIsPreferred",
+    "nodeType": "TSModuleDeclaration",
+    "ruleId": "@typescript-eslint/no-namespace",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-namespace ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 25,
+    "endLine": 1,
+    "line": 1,
+    "message": "ES2015 module syntax is preferred over namespaces.",
+    "messageId": "moduleSyntaxIsPreferred",
+    "nodeType": "TSModuleDeclaration",
+    "ruleId": "@typescript-eslint/no-namespace",
+    "severity": 2,
+  },
+]
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/jsx-max-props-per-line не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/jsx-max-props-per-line не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`react/jsx-max-props-per-line ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 7,
+    "endLine": 4,
+    "line": 4,
+    "message": "Prop \`baz\` must be placed on a new line",
+    "messageId": "newLine",
+    "nodeType": "JSXAttribute",
+    "ruleId": "react/jsx-max-props-per-line",
+    "severity": 2,
+  },
+]
+`;

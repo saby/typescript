@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-duplicate-selectors не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-duplicate-selectors не ошибки индекс теста: 0 2`] = `Array []`;
+
+exports[`no-duplicate-selectors ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 5,
+    "endLine": 3,
+    "line": 3,
+    "rule": "no-duplicate-selectors",
+    "severity": "error",
+    "text": "Unexpected duplicate selector \\".foo\\", first used at line 1 (no-duplicate-selectors)",
+  },
+]
+`;
+
+exports[`no-duplicate-selectors ошибки индекс теста: 0 2`] = `Array []`;

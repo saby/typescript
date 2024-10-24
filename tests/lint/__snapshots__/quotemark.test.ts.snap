@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`quotemark не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`quotemark не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`quotemark не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`quotemark ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Strings must use singlequote.",
+    "messageId": "wrongQuotes",
+    "nodeType": "Literal",
+    "ruleId": "quotes",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`quotemark ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 34,
+    "endLine": 1,
+    "line": 1,
+    "message": "Strings must use singlequote.",
+    "messageId": "wrongQuotes",
+    "nodeType": "TemplateLiteral",
+    "ruleId": "quotes",
+    "severity": 2,
+  },
+]
+`;
