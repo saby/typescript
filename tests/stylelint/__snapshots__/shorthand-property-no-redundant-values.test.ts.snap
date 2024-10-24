@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shorthand-property-no-redundant-values не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`shorthand-property-no-redundant-values не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`shorthand-property-no-redundant-values ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 29,
+    "endLine": 2,
+    "line": 2,
+    "rule": "shorthand-property-no-redundant-values",
+    "severity": "error",
+    "text": "Expected \\"1px 1px 1px 1px\\" to be \\"1px\\" (shorthand-property-no-redundant-values)",
+  },
+]
+`;
+
+exports[`shorthand-property-no-redundant-values ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 29,
+    "endLine": 2,
+    "line": 2,
+    "rule": "shorthand-property-no-redundant-values",
+    "severity": "error",
+    "text": "Expected \\"1px 2px 1px 2px\\" to be \\"1px 2px\\" (shorthand-property-no-redundant-values)",
+  },
+]
+`;
+
+exports[`shorthand-property-no-redundant-values ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 25,
+    "endLine": 2,
+    "line": 2,
+    "rule": "shorthand-property-no-redundant-values",
+    "severity": "error",
+    "text": "Expected \\"1px 2px 1px\\" to be \\"1px 2px\\" (shorthand-property-no-redundant-values)",
+  },
+]
+`;

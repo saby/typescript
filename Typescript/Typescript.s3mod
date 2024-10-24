@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ui_module autodoc="0" for_cdn="0" id="0e6a9dbb-14e5-4382-9430-b6e73a53dc79" kaizen_zone="7a6cc1fc-6521-4d6c-a198-0587b30765c3" name="Typescript" package="Wasaby" required="1" responsible="Зайцев А.С." responsible_uuid="9ac20e80-7163-4fc9-8238-1e3b7d7c6f74" version="1.07">
+
+  <description/>
+
+  <depends/>
+
+  <load_after/>
+
+  <parameters/>
+
+  <resources/>
+
+  <preload/>
+
+</ui_module>
