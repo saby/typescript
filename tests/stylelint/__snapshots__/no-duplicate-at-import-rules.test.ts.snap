@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-duplicate-at-import-rules ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 16,
+    "endLine": 2,
+    "line": 2,
+    "rule": "no-duplicate-at-import-rules",
+    "severity": "error",
+    "text": "Unexpected duplicate @import rule a.css (no-duplicate-at-import-rules)",
+  },
+]
+`;
+
+exports[`no-duplicate-at-import-rules ошибки индекс теста: 0 2`] = `Array []`;

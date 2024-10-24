@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ban-ts-ignore не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`ban-ts-ignore не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`ban-ts-ignore ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 14,
+    "endLine": 1,
+    "line": 1,
+    "message": "Use \\"@ts-expect-error\\" instead of \\"@ts-ignore\\", as \\"@ts-ignore\\" will do nothing if the following line is error-free.",
+    "messageId": "tsIgnoreInsteadOfExpectError",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/ban-ts-comment",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`ban-ts-ignore ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 20,
+    "endLine": 1,
+    "line": 1,
+    "message": "Include a description after the \\"@ts-expect-error\\" directive to explain why the @ts-expect-error is necessary. The description must be 3 characters or longer.",
+    "messageId": "tsDirectiveCommentRequiresDescription",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/ban-ts-comment",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`ban-ts-ignore ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 15,
+    "endLine": 1,
+    "line": 1,
+    "message": "Do not use \\"@ts-nocheck\\" because it alters compilation errors.",
+    "messageId": "tsDirectiveComment",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/ban-ts-comment",
+    "severity": 1,
+  },
+]
+`;
