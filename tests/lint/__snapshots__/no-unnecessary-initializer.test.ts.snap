@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-unnecessary-initializer не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-unnecessary-initializer не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`no-unnecessary-initializer ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 20,
+    "endLine": 1,
+    "fix": Object {
+      "range": Array [
+        7,
+        19,
+      ],
+      "text": "",
+    },
+    "line": 1,
+    "message": "It's not necessary to initialize 'bar' to undefined.",
+    "messageId": "unnecessaryUndefinedInit",
+    "nodeType": "VariableDeclarator",
+    "ruleId": "no-undef-init",
+    "severity": 2,
+  },
+]
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-construct ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 22,
+    "endColumn": 47,
+    "endLine": 1,
+    "line": 1,
+    "message": "Do not use String as a constructor.",
+    "messageId": "noConstructor",
+    "nodeType": "NewExpression",
+    "ruleId": "no-new-wrappers",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-construct ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 22,
+    "endColumn": 35,
+    "endLine": 1,
+    "line": 1,
+    "message": "Do not use Number as a constructor.",
+    "messageId": "noConstructor",
+    "nodeType": "NewExpression",
+    "ruleId": "no-new-wrappers",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-construct ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 23,
+    "endColumn": 41,
+    "endLine": 1,
+    "line": 1,
+    "message": "Do not use Boolean as a constructor.",
+    "messageId": "noConstructor",
+    "nodeType": "NewExpression",
+    "ruleId": "no-new-wrappers",
+    "severity": 2,
+  },
+]
+`;

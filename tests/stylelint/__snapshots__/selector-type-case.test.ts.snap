@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selector-type-case не ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 2,
+    "endLine": 1,
+    "line": 1,
+    "rule": "selector-max-type",
+    "severity": "error",
+    "text": "Expected \\"a\\" to have no more than 0 type selectors (selector-max-type)",
+  },
+]
+`;
+
+exports[`selector-type-case ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 2,
+    "endLine": 1,
+    "line": 1,
+    "rule": "selector-max-type",
+    "severity": "error",
+    "text": "Expected \\"A\\" to have no more than 0 type selectors (selector-max-type)",
+  },
+  Object {
+    "column": 1,
+    "endColumn": 2,
+    "endLine": 3,
+    "line": 1,
+    "rule": "selector-type-case",
+    "severity": "error",
+    "text": "Expected \\"A\\" to be \\"a\\" (selector-type-case)",
+  },
+]
+`;

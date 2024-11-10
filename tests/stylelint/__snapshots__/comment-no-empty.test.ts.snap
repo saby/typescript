@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`comment-no-empty не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`comment-no-empty ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 6,
+    "endLine": 1,
+    "line": 1,
+    "rule": "comment-no-empty",
+    "severity": "error",
+    "text": "Unexpected empty comment (comment-no-empty)",
+  },
+]
+`;

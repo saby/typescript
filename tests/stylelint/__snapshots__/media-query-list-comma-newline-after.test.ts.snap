@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`media-query-list-comma-newline-after не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`media-query-list-comma-newline-after ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 5,
+    "endLine": 2,
+    "line": 2,
+    "rule": "media-query-list-comma-newline-after",
+    "severity": "error",
+    "text": "Expected newline after \\",\\" in a multi-line list (media-query-list-comma-newline-after)",
+  },
+  Object {
+    "column": 4,
+    "endColumn": 5,
+    "endLine": 2,
+    "line": 2,
+    "rule": "media-query-list-comma-space-before",
+    "severity": "error",
+    "text": "Unexpected whitespace before \\",\\" (media-query-list-comma-space-before)",
+  },
+]
+`;

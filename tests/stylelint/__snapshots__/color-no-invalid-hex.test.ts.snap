@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`color-no-invalid-hex не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`color-no-invalid-hex ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 14,
+    "endLine": 2,
+    "line": 2,
+    "rule": "color-no-invalid-hex",
+    "severity": "error",
+    "text": "Unexpected invalid hex color \\"#y3\\" (color-no-invalid-hex)",
+  },
+]
+`;

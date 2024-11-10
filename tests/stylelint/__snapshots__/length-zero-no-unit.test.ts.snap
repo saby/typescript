@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`length-zero-no-unit не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`length-zero-no-unit ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 13,
+    "endColumn": 15,
+    "endLine": 2,
+    "line": 2,
+    "rule": "length-zero-no-unit",
+    "severity": "error",
+    "text": "Unexpected unit (length-zero-no-unit)",
+  },
+]
+`;

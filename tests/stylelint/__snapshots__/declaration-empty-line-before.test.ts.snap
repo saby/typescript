@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`declaration-empty-line-before не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`declaration-empty-line-before не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`declaration-empty-line-before не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`declaration-empty-line-before не ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 8,
+    "endColumn": 24,
+    "endLine": 1,
+    "line": 1,
+    "rule": "declaration-block-single-line-max-declarations",
+    "severity": "error",
+    "text": "Expected no more than 0 declarations (declaration-block-single-line-max-declarations)",
+  },
+]
+`;
+
+exports[`declaration-empty-line-before ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 16,
+    "endLine": 4,
+    "line": 4,
+    "rule": "declaration-empty-line-before",
+    "severity": "error",
+    "text": "Unexpected empty line before declaration (declaration-empty-line-before)",
+  },
+]
+`;
+
+exports[`declaration-empty-line-before ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 16,
+    "endLine": 3,
+    "line": 3,
+    "rule": "declaration-empty-line-before",
+    "severity": "error",
+    "text": "Unexpected empty line before declaration (declaration-empty-line-before)",
+  },
+]
+`;

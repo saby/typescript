@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`media-feature-name-no-unknown не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`media-feature-name-no-unknown ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 20,
+    "endColumn": 27,
+    "endLine": 1,
+    "line": 1,
+    "rule": "media-feature-name-no-unknown",
+    "severity": "error",
+    "text": "Unexpected unknown media feature name \\"unknown\\" (media-feature-name-no-unknown)",
+  },
+]
+`;

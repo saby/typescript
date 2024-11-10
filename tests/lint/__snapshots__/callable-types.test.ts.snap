@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`callable-types не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`callable-types ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 14,
+    "endLine": 2,
+    "fix": Object {
+      "range": Array [
+        0,
+        30,
+      ],
+      "text": "type I0 = () => void;",
+    },
+    "line": 2,
+    "message": "Interface only has a call signature, you should use a function type instead.",
+    "messageId": "functionTypeOverCallableType",
+    "nodeType": "TSCallSignatureDeclaration",
+    "ruleId": "@typescript-eslint/prefer-function-type",
+    "severity": 2,
+  },
+]
+`;

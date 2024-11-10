@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`media-query-list-comma-space-before не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`media-query-list-comma-space-before ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 27,
+    "endColumn": 28,
+    "endLine": 1,
+    "line": 1,
+    "rule": "media-query-list-comma-space-before",
+    "severity": "error",
+    "text": "Unexpected whitespace before \\",\\" (media-query-list-comma-space-before)",
+  },
+]
+`;

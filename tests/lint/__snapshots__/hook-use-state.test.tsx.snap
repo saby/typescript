@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/hook-use-state не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/hook-use-state не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`react/hook-use-state не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`react/hook-use-state не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`react/hook-use-state ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 26,
+    "endColumn": 42,
+    "endLine": 3,
+    "line": 3,
+    "message": "useState call is not destructured into value + setter pair",
+    "messageId": "useStateErrorMessage",
+    "nodeType": "CallExpression",
+    "ruleId": "react/hook-use-state",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`react/hook-use-state ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 9,
+    "endColumn": 29,
+    "endLine": 3,
+    "line": 3,
+    "message": "useState call is not destructured into value + setter pair",
+    "messageId": "useStateErrorMessage",
+    "nodeType": "ArrayPattern",
+    "ruleId": "react/hook-use-state",
+    "severity": 2,
+    "suggestions": Array [
+      Object {
+        "desc": "Destructure useState call into value + setter pair",
+        "fix": Object {
+          "range": Array [
+            57,
+            77,
+          ],
+          "text": "[color, setColor]",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`react/hook-use-state ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 26,
+    "endColumn": 36,
+    "endLine": 3,
+    "line": 3,
+    "message": "useState call is not destructured into value + setter pair",
+    "messageId": "useStateErrorMessage",
+    "nodeType": "CallExpression",
+    "ruleId": "react/hook-use-state",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`react/hook-use-state ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 9,
+    "endColumn": 29,
+    "endLine": 3,
+    "line": 3,
+    "message": "useState call is not destructured into value + setter pair",
+    "messageId": "useStateErrorMessage",
+    "nodeType": "ArrayPattern",
+    "ruleId": "react/hook-use-state",
+    "severity": 2,
+    "suggestions": Array [
+      Object {
+        "desc": "Destructure useState call into value + setter pair",
+        "fix": Object {
+          "range": Array [
+            64,
+            84,
+          ],
+          "text": "[color, setColor]",
+        },
+      },
+    ],
+  },
+]
+`;

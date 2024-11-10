@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`color-hex-length не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`color-hex-length не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`color-hex-length не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`color-hex-length ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 18,
+    "endLine": 2,
+    "line": 2,
+    "rule": "color-hex-length",
+    "severity": "error",
+    "text": "Expected \\"#cccccc\\" to be \\"#ccc\\" (color-hex-length)",
+  },
+]
+`;
+
+exports[`color-hex-length ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 20,
+    "endLine": 2,
+    "line": 2,
+    "rule": "color-hex-length",
+    "severity": "error",
+    "text": "Expected \\"#ccccccaa\\" to be \\"#ccca\\" (color-hex-length)",
+  },
+]
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`declaration-block-no-duplicate-properties не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`declaration-block-no-duplicate-properties ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 4,
+    "endColumn": 13,
+    "endLine": 3,
+    "line": 3,
+    "rule": "declaration-block-no-duplicate-properties",
+    "severity": "error",
+    "text": "Unexpected duplicate \\"font-size\\" (declaration-block-no-duplicate-properties)",
+  },
+]
+`;
