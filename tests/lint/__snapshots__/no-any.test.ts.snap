@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-any ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 12,
+    "endColumn": 15,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected any. Specify a different type.",
+    "messageId": "unexpectedAny",
+    "nodeType": "TSAnyKeyword",
+    "ruleId": "@typescript-eslint/no-explicit-any",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-any ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 13,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected any. Specify a different type.",
+    "messageId": "unexpectedAny",
+    "nodeType": "TSAnyKeyword",
+    "ruleId": "@typescript-eslint/no-explicit-any",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-any ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 19,
+    "endColumn": 22,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected any. Specify a different type.",
+    "messageId": "unexpectedAny",
+    "nodeType": "TSAnyKeyword",
+    "ruleId": "@typescript-eslint/no-explicit-any",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-any ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 24,
+    "endColumn": 27,
+    "endLine": 1,
+    "line": 1,
+    "message": "Unexpected any. Specify a different type.",
+    "messageId": "unexpectedAny",
+    "nodeType": "TSAnyKeyword",
+    "ruleId": "@typescript-eslint/no-explicit-any",
+    "severity": 1,
+  },
+]
+`;
