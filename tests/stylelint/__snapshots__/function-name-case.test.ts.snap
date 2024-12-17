@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`function-name-case ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 15,
+    "endColumn": 16,
+    "endLine": 2,
+    "line": 2,
+    "rule": "function-name-case",
+    "severity": "error",
+    "text": "Expected \\"Translate\\" to be \\"translate\\" (function-name-case)",
+  },
+]
+`;
+
+exports[`function-name-case ошибки индекс теста: 0 2`] = `Array []`;

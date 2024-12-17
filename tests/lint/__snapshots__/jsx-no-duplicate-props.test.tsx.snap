@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/jsx-no-duplicate-props ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 29,
+    "endColumn": 40,
+    "endLine": 2,
+    "line": 2,
+    "message": "No duplicate props allowed",
+    "messageId": "noDuplicateProps",
+    "nodeType": "JSXAttribute",
+    "ruleId": "react/jsx-no-duplicate-props",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`react/jsx-no-duplicate-props ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 29,
+    "endColumn": 40,
+    "endLine": 2,
+    "line": 2,
+    "message": "No duplicate props allowed",
+    "messageId": "noDuplicateProps",
+    "nodeType": "JSXAttribute",
+    "ruleId": "react/jsx-no-duplicate-props",
+    "severity": 2,
+  },
+]
+`;
