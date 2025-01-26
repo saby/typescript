@@ -1,0 +1,8 @@
+{
+   "extends": "./es5.json",
+   "compilerOptions": {
+      "baseUrl": ".",
+      "types": ["mocha", "requirejs", "jest"],
+      "moduleResolution": "node"
+   }
+}
