@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`object-literal-key-quotes не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`object-literal-key-quotes не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`object-literal-key-quotes ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 13,
+    "endLine": 2,
+    "line": 2,
+    "message": "Unnecessarily quoted property 'qwe' found.",
+    "messageId": "unnecessarilyQuotedProperty",
+    "nodeType": "Property",
+    "ruleId": "quote-props",
+    "severity": 2,
+  },
+]
+`;

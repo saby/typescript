@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`string-no-newline не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`string-no-newline не ошибки индекс теста: 0 2`] = `Array []`;
+
+exports[`string-no-newline ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "endColumn": 9,
+    "endLine": 4,
+    "line": 3,
+    "rule": "string-no-newline",
+    "severity": "error",
+    "text": "Unexpected newline in string (string-no-newline)",
+  },
+]
+`;
+
+exports[`string-no-newline ошибки индекс теста: 0 2`] = `Array []`;

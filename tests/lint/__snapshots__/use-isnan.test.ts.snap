@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`use-isnan не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`use-isnan не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`use-isnan ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Use the isNaN function to compare with NaN.",
+    "messageId": "comparisonWithNaN",
+    "nodeType": "BinaryExpression",
+    "ruleId": "use-isnan",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`use-isnan ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 16,
+    "endLine": 1,
+    "line": 1,
+    "message": "Use the isNaN function to compare with NaN.",
+    "messageId": "comparisonWithNaN",
+    "nodeType": "BinaryExpression",
+    "ruleId": "use-isnan",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`use-isnan ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 23,
+    "endLine": 1,
+    "line": 1,
+    "message": "Use the isNaN function to compare with NaN.",
+    "messageId": "comparisonWithNaN",
+    "nodeType": "BinaryExpression",
+    "ruleId": "use-isnan",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`use-isnan ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 23,
+    "endLine": 1,
+    "line": 1,
+    "message": "Use the isNaN function to compare with NaN.",
+    "messageId": "comparisonWithNaN",
+    "nodeType": "BinaryExpression",
+    "ruleId": "use-isnan",
+    "severity": 2,
+  },
+]
+`;

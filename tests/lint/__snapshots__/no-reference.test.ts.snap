@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-reference ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 29,
+    "endLine": 1,
+    "line": 1,
+    "message": "Do not use a triple slash reference for foo, use \`import\` style instead.",
+    "messageId": "tripleSlashReference",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/triple-slash-reference",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-reference ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 30,
+    "endLine": 1,
+    "line": 1,
+    "message": "Do not use a triple slash reference for bar, use \`import\` style instead.",
+    "messageId": "tripleSlashReference",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/triple-slash-reference",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-reference ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 28,
+    "endLine": 1,
+    "line": 1,
+    "message": "Do not use a triple slash reference for baz, use \`import\` style instead.",
+    "messageId": "tripleSlashReference",
+    "nodeType": "Line",
+    "ruleId": "@typescript-eslint/triple-slash-reference",
+    "severity": 2,
+  },
+]
+`;
