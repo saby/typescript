@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-trailing-whitespace ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 18,
+    "endColumn": 19,
+    "endLine": 1,
+    "line": 1,
+    "message": "Trailing spaces not allowed.",
+    "messageId": "trailingSpace",
+    "nodeType": "Program",
+    "ruleId": "no-trailing-spaces",
+    "severity": 2,
+  },
+  Object {
+    "column": 3,
+    "endColumn": 4,
+    "endLine": 2,
+    "line": 2,
+    "message": "Trailing spaces not allowed.",
+    "messageId": "trailingSpace",
+    "nodeType": "Program",
+    "ruleId": "no-trailing-spaces",
+    "severity": 2,
+  },
+]
+`;

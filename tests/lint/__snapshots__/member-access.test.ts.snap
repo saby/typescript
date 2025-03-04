@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`member-access не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`member-access ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 31,
+    "endLine": 2,
+    "line": 2,
+    "message": "Public accessibility modifier on class property animalName.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "PropertyDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 5,
+    "line": 3,
+    "message": "Public accessibility modifier on method definition constructor.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 8,
+    "line": 6,
+    "message": "Public accessibility modifier on get property accessor name.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 11,
+    "line": 9,
+    "message": "Public accessibility modifier on set property accessor name.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+  Object {
+    "column": 5,
+    "endColumn": 6,
+    "endLine": 14,
+    "line": 12,
+    "message": "Public accessibility modifier on method definition walk.",
+    "messageId": "unwantedPublicAccessibility",
+    "nodeType": "MethodDefinition",
+    "ruleId": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+  },
+]
+`;
