@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-floating-promises не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-floating-promises не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`no-floating-promises не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`no-floating-promises не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`no-floating-promises не ошибки индекс теста: 4 1`] = `Array []`;
+
+exports[`no-floating-promises не ошибки индекс теста: 5 1`] = `Array []`;
+
+exports[`no-floating-promises не ошибки индекс теста: 6 1`] = `Array []`;
+
+exports[`no-floating-promises ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 9,
+    "endLine": 2,
+    "line": 2,
+    "message": "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the \`void\` operator.",
+    "messageId": "floatingVoid",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-floating-promises",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-floating-promises ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 33,
+    "endLine": 4,
+    "line": 4,
+    "message": "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the \`void\` operator.",
+    "messageId": "floatingVoid",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-floating-promises",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-floating-promises ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 33,
+    "endLine": 1,
+    "line": 1,
+    "message": "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the \`void\` operator.",
+    "messageId": "floatingVoid",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-floating-promises",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-floating-promises ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 35,
+    "endLine": 1,
+    "line": 1,
+    "message": "Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the \`void\` operator.",
+    "messageId": "floatingVoid",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-floating-promises",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`no-floating-promises ошибки индекс теста: 4 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 30,
+    "endLine": 1,
+    "line": 1,
+    "message": "An array of Promises may be unintentional. Consider handling the promises' fulfillment or rejection with Promise.all or similar, or explicitly marking the expression as ignored with the \`void\` operator.",
+    "messageId": "floatingPromiseArrayVoid",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-floating-promises",
+    "severity": 1,
+  },
+]
+`;

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Benchmark</title>
+  </head>
+  <body>
+    <p>
+      По нажатию кнопки запускается генерация картинки. По умолчанию размер
+      320x240. Для изменения размеров нужно в url передать параметры w и h
+      (пример benchmark.html?w=100&h=100)
+    </p>
+    <button id="startBenchmark">Начать замер</button>
+    <script>
+      document
+        .getElementById("startBenchmark")
+        .addEventListener("click", () => {
+          const searchParams = new URL(location).searchParams;
+          main(searchParams.get("w") ?? undefined, searchParams.get("h") ?? undefined);
+        });
+      // Бенчмарк основан на https://www.kevinbeason.com/smallpt/
+      class Vector {
+        constructor(x = 0, y = 0, z = 0) {
+          this.x = x;
+          this.y = y;
+          this.z = z;
+        }
+        add(vec) {
+          return new Vector(this.x + vec.x, this.y + vec.y, this.z + vec.z);
+        }
+        subtract(vec) {
+          return new Vector(this.x - vec.x, this.y - vec.y, this.z - vec.z);
+        }
+        multiplyByNumber(num) {
+          return new Vector(this.x * num, this.y * num, this.z * num);
+        }
+        multiplyByVector(vec) {
+          return new Vector(this.x * vec.x, this.y * vec.y, this.z * vec.z);
+        }
+        norm() {
+          return this.multiplyByNumber(
+            1 / Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z),
+          );
+        }
+        dot(vec) {
+          return this.x * vec.x + this.y * vec.y + this.z * vec.z;
+        }
+        percentOperator(vec) {
+          return new Vector(
+            this.y * vec.z - this.z * vec.y,
+            this.z * vec.x - this.x * vec.z,
+            this.x * vec.y - this.y * vec.x,
+          );
+        }
+      }
+      class Ray {
+        constructor(o, d) {
+          this.o = o;
+          this.d = d;
+        }
+      }
+      const REFL_TYPE = {
+        DIFF: 0,
+        SPEC: 1,
+        REFR: 2,
+      };
+      class Sphere {
+        constructor(rad, p, e, c, refl) {
+          this.rad = rad;
+          this.p = p;
+          this.e = e;
+          this.c = c;
+          this.refl = refl;
+        }
+        intersect(ray) {
+          const op = this.p.subtract(ray.o);
+          const eps = 1e-4;
+          const b = op.dot(ray.d);
+          let det = b * b - op.dot(op) + this.rad * this.rad;
+          if (det < 0) {
+            return 0;
+          } else {
+            det = Math.sqrt(det);
+          }
+          if (b - det > eps) {
+            return b - det;
+          } else if (b + det > eps) {
+            return b + det;
+          } else {
+            return 0;
+          }
+        }
+      }
+      const SPHERES = [
+        new Sphere(
+          1e5,
+          new Vector(1e5 + 1, 40.8, 81.6),
+          new Vector(),
+          new Vector(0.75, 0.25, 0.25),
+          REFL_TYPE.DIFF,
+        ), //Left
+        new Sphere(
+          1e5,
+          new Vector(-1e5 + 99, 40.8, 81.6),
+          new Vector(),
+          new Vector(0.25, 0.25, 0.75),
+          REFL_TYPE.DIFF,
+        ), //Rght
+        new Sphere(
+          1e5,
+          new Vector(50, 40.8, 1e5),
+          new Vector(),
+          new Vector(0.75, 0.75, 0.75),
+          REFL_TYPE.DIFF,
+        ), //Back
+        new Sphere(
+          1e5,
+          new Vector(50, 40.8, -1e5 + 170),
+          new Vector(),
+          new Vector(),
+          REFL_TYPE.DIFF,
+        ), //Frnt
+        new Sphere(
+          1e5,
+          new Vector(50, 1e5, 81.6),
+          new Vector(),
+          new Vector(0.75, 0.75, 0.75),
+          REFL_TYPE.DIFF,
+        ), //Botm
+        new Sphere(
+          1e5,
+          new Vector(50, -1e5 + 81.6, 81.6),
+          new Vector(),
+          new Vector(0.75, 0.75, 0.75),
+          REFL_TYPE.DIFF,
+        ), //Top
+        new Sphere(
+          16.5,
+          new Vector(27, 16.5, 47),
+          new Vector(),
+          new Vector(1, 1, 1).multiplyByNumber(0.999),
+          REFL_TYPE.SPEC,
+        ), //Mirr
+        new Sphere(
+          16.5,
+          new Vector(73, 16.5, 78),
+          new Vector(),
+          new Vector(1, 1, 1).multiplyByNumber(0.999),
+          REFL_TYPE.REFR,
+        ), //Glas
+        new Sphere(
+          600,
+          new Vector(50, 681.6 - 0.27, 81.6),
+          new Vector(12, 12, 12),
+          new Vector(),
+          REFL_TYPE.DIFF,
+        ), //Lite
+      ];
+      function clamp(x, low = 0, high = 1) {
+        return x > high ? high : x < low ? low : x;
+      }
+      function intersect(ray) {
+        let id = 0;
+        let hit = false;
+        let distance = 1e20;
+        for (let i = 0; i < SPHERES.length; i++) {
+          const d = SPHERES[i].intersect(ray);
+          if (d && d < distance) {
+            hit = true;
+            distance = d;
+            id = i;
+          }
+        }
+        return [hit, distance, id];
+      }
+      function radiance(ray, depth) {
+        const [hit, t, id] = intersect(ray);
+        if (!hit) {
+          return new Vector();
+        }
+        const obj = SPHERES[id];
+        const x = ray.o.add(ray.d.multiplyByNumber(t));
+        const n = x.subtract(obj.p).norm();
+        const nl = n.dot(ray.d) < 0 ? n : n.multiplyByNumber(-1);
+        let f = obj.c;
+        const p = f.x > f.y && f.x > f.z ? f.x : f.y > f.z ? f.y : f.z;
+        depth++;
+        if (depth > 5) {
+          if (Math.random() < p) {
+            f = f.multiplyByNumber(1 / p);
+          } else {
+            return obj.e;
+          }
+        }
+        if (obj.refl === REFL_TYPE.DIFF) {
+          const r1 = 2 * Math.PI * Math.random();
+          const r2 = Math.random();
+          const r2s = Math.sqrt(r2);
+          const w = nl;
+          const u = (Math.abs(w.x) > 0.1 ? new Vector(0, 1) : new Vector(1))
+            .percentOperator(w)
+            .norm();
+          const v = w.percentOperator(u);
+          const d = u
+            .multiplyByNumber(Math.cos(r1))
+            .multiplyByNumber(r2s)
+            .add(v.multiplyByNumber(Math.sin(r1)).multiplyByNumber(r2s))
+            .add(w.multiplyByNumber(Math.sqrt(1 - r2)))
+            .norm();
+          return obj.e.add(f.multiplyByVector(radiance(new Ray(x, d), depth)));
+        } else if (obj.refl === REFL_TYPE.SPEC) {
+          return obj.e.add(
+            f.multiplyByVector(
+              radiance(
+                new Ray(
+                  x,
+                  ray.d.subtract(
+                    n.multiplyByNumber(2).multiplyByNumber(n.dot(ray.d)),
+                  ),
+                ),
+                depth,
+              ),
+            ),
+          );
+        }
+        const reflRay = new Ray(
+          x,
+          ray.d.subtract(n.multiplyByNumber(2).multiplyByNumber(n.dot(ray.d))),
+        );
+        const into = n.dot(nl) > 0;
+        const nc = 1;
+        const nt = 1.5;
+        const nnt = into ? nc / nt : nt / nc;
+        const ddn = ray.d.dot(nl);
+        const cos2t = 1 - nnt * nnt * (1 - ddn * ddn);
+        if (cos2t < 0) {
+          return obj.e.subtract(f.multiplyByVector(radiance(reflRay, depth)));
+        }
+        const tdir = ray.d
+          .multiplyByNumber(nnt)
+          .subtract(
+            n
+              .multiplyByNumber(into ? 1 : -1)
+              .multiplyByNumber(ddn * nnt + Math.sqrt(cos2t)),
+          )
+          .norm();
+        const a = nt - nc;
+        const b = nt + nc;
+        const R0 = (a * a) / (b * b);
+        const c = 1 - (into ? -ddn : tdir.dot(n));
+        const Re = R0 + (1 - R0) * c * c * c * c * c;
+        const Tr = 1 - Re;
+        const P = 0.25 + 0.5 * Re;
+        const RP = Re / P;
+        const TP = Tr / (1 - P);
+        return obj.e.add(
+          f.multiplyByVector(
+            depth > 2
+              ? Math.random() < P
+                ? radiance(reflRay, depth).multiplyByNumber(RP)
+                : radiance(new Ray(x, tdir), depth).multiplyByNumber(TP)
+              : radiance(reflRay, depth)
+                  .multiplyByNumber(Re)
+                  .add(radiance(new Ray(x, tdir), depth).multiplyByNumber(Tr)),
+          ),
+        );
+      }
+      function main(w = 320, h = 240) {
+        if (typeof w !== "number") {
+          w = +w;
+        }
+        if (typeof h !== "number") {
+          h = +h;
+        }
+        const samps = 64 / 4;
+        const cam = new Ray(
+          new Vector(50, 52, 295.6),
+          new Vector(0, -0.42612, -1).norm(),
+        );
+        const cx = new Vector((w * 0.5135) / h);
+        const cy = cx.percentOperator(cam.d).norm().multiplyByNumber(0.5135);
+        const c = [];
+        for (let j = 0; j < w * h; j++) {
+          c.push(new Vector());
+        }
+        const startTime = performance.now();
+        for (let y = 0; y < h; y++) {
+          console.log(
+            "\rRendering (" +
+              samps * 4 +
+              " spp) " +
+              ((100.0 * y) / (h - 1)).toFixed(2) +
+              "%",
+          );
+          for (let x = 0; x < w; x++) {
+            for (let sy = 0; sy < 2; sy++) {
+              let i = (h - y - 1) * w + x;
+              for (let sx = 0; sx < 2; sx++) {
+                let r = new Vector();
+                for (let s = 0; s < samps; s++) {
+                  const r1 = 2 * Math.random();
+                  const dx = r1 < 1 ? Math.sqrt(r1) - 1 : 1 - Math.sqrt(2 - r1);
+                  const r2 = 2 * Math.random();
+                  const dy = r2 < 1 ? Math.sqrt(r2) - 1 : 1 - Math.sqrt(2 - r2);
+                  const d = cx
+                    .multiplyByNumber(((sx + 0.5 + dx) / 2 + x) / w - 0.5)
+                    .add(
+                      cy.multiplyByNumber(((sy + 0.5 + dy) / 2 + y) / h - 0.5),
+                    )
+                    .add(cam.d);
+                  r = r.add(
+                    radiance(
+                      new Ray(cam.o.add(d.multiplyByNumber(140)), d.norm()),
+                      0,
+                    ).multiplyByNumber(1 / samps),
+                  );
+                }
+                c[i] = c[i].add(
+                  new Vector(
+                    clamp(r.x),
+                    clamp(r.y),
+                    clamp(r.z),
+                  ).multiplyByNumber(0.25),
+                );
+              }
+            }
+          }
+        }
+        const endTime = performance.now();
+        const resultDiv = document.createElement("div");
+        resultDiv.textContent = `Время рендеринга: ${endTime - startTime}ms`;
+        document.body.appendChild(resultDiv);
+      }
+    </script>
+  </body>
+</html>

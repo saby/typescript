@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/jsx-fragments не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/jsx-fragments не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`react/jsx-fragments ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 10,
+    "endColumn": 18,
+    "endLine": 5,
+    "line": 2,
+    "message": "Prefer fragment shorthand over React.Fragment",
+    "messageId": "preferFragment",
+    "nodeType": "JSXElement",
+    "ruleId": "react/jsx-fragments",
+    "severity": 2,
+  },
+]
+`;
