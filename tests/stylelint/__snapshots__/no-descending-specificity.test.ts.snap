@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-descending-specificity не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-descending-specificity не ошибки индекс теста: 0 2`] = `Array []`;
+
+exports[`no-descending-specificity ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 7,
+    "endLine": 5,
+    "line": 5,
+    "rule": "no-descending-specificity",
+    "severity": "error",
+    "text": "Expected selector \\".child\\" to come before selector \\".parent .child\\" (no-descending-specificity)",
+  },
+]
+`;
+
+exports[`no-descending-specificity ошибки индекс теста: 0 2`] = `Array []`;
