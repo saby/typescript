@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`array-type не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`array-type не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`array-type ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 12,
+    "endColumn": 25,
+    "endLine": 1,
+    "line": 1,
+    "message": "Array type using 'Array<number>' is forbidden. Use 'number[]' instead.",
+    "messageId": "errorStringArray",
+    "nodeType": "TSTypeReference",
+    "ruleId": "@typescript-eslint/array-type",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`array-type ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 13,
+    "endColumn": 34,
+    "endLine": 1,
+    "line": 1,
+    "message": "Array type using 'ReadonlyArray<number>' is forbidden. Use 'readonly number[]' instead.",
+    "messageId": "errorStringArray",
+    "nodeType": "TSTypeReference",
+    "ruleId": "@typescript-eslint/array-type",
+    "severity": 2,
+  },
+]
+`;

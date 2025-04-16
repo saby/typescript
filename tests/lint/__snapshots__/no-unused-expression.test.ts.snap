@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-unused-expression не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`no-unused-expression не ошибки индекс теста: 1 1`] = `Array []`;
+
+exports[`no-unused-expression не ошибки индекс теста: 2 1`] = `Array []`;
+
+exports[`no-unused-expression не ошибки индекс теста: 3 1`] = `Array []`;
+
+exports[`no-unused-expression не ошибки индекс теста: 4 1`] = `Array []`;
+
+exports[`no-unused-expression не ошибки индекс теста: 5 1`] = `Array []`;
+
+exports[`no-unused-expression ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 3,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected an assignment or function call and instead saw an expression.",
+    "messageId": "unusedExpression",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-unused-expressions",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-unused-expression ошибки индекс теста: 1 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "endColumn": 9,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected an assignment or function call and instead saw an expression.",
+    "messageId": "unusedExpression",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-unused-expressions",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-unused-expression ошибки индекс теста: 2 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 10,
+    "endLine": 13,
+    "line": 13,
+    "message": "Expected an assignment or function call and instead saw an expression.",
+    "messageId": "unusedExpression",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-unused-expressions",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-unused-expression ошибки индекс теста: 3 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 3,
+    "endLine": 15,
+    "line": 13,
+    "message": "Expected an assignment or function call and instead saw an expression.",
+    "messageId": "unusedExpression",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-unused-expressions",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-unused-expression ошибки индекс теста: 4 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 40,
+    "endLine": 1,
+    "line": 1,
+    "message": "Expected an assignment or function call and instead saw an expression.",
+    "messageId": "unusedExpression",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-unused-expressions",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`no-unused-expression ошибки индекс теста: 5 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 35,
+    "endLine": 13,
+    "line": 13,
+    "message": "Expected an assignment or function call and instead saw an expression.",
+    "messageId": "unusedExpression",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/no-unused-expressions",
+    "severity": 2,
+  },
+]
+`;
