@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`font-family-no-duplicate-names не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`font-family-no-duplicate-names не ошибки индекс теста: 0 2`] = `Array []`;
+
+exports[`font-family-no-duplicate-names ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 24,
+    "endColumn": 29,
+    "endLine": 2,
+    "line": 2,
+    "rule": "font-family-no-duplicate-names",
+    "severity": "error",
+    "text": "Unexpected duplicate name Times (font-family-no-duplicate-names)",
+  },
+]
+`;
+
+exports[`font-family-no-duplicate-names ошибки индекс теста: 0 2`] = `Array []`;

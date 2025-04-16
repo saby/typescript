@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react/jsx-no-constructed-context-values не ошибки индекс теста: 0 1`] = `Array []`;
+
+exports[`react/jsx-no-constructed-context-values ошибки индекс теста: 0 1`] = `
+Array [
+  Object {
+    "column": 39,
+    "endColumn": 51,
+    "endLine": 2,
+    "line": 2,
+    "message": "The object passed as the value prop to the Context provider (at line 2) changes every render. To fix this consider wrapping it in a useMemo hook.",
+    "messageId": "defaultMsg",
+    "nodeType": "ObjectExpression",
+    "ruleId": "react/jsx-no-constructed-context-values",
+    "severity": 2,
+  },
+]
+`;
